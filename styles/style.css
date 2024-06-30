@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 :root{
     --color-primario: #0A3871;
     --color-secundario:#E5E5E5;
     --color-hover:#272727;
+    --fuente-texto: font-family: "Inter", sans-serif;
 
 }
 
@@ -21,7 +24,7 @@ body{
 
 .contenido__main{
     display: flex;
-    align-items: auto;
+    align-items: center;
     justify-content: space-evenly;
     padding: 4% 10%;
     gap: 30px;
@@ -34,19 +37,33 @@ body{
     
 }
 
-#cifrar{
+#textarea__cifrar{
+    border: none;
+    background: 8px;
     color: var(--color-primario);
     width: 680px;
     height: 288px;
+    font-family: var(--fuente-texto);
+    font-size: 32px;
 }
 
-#descifrar{
-    width: 336px;
-    height: 781px;
+#textarea__descifrar{
+    font-family: var(--fuente-texto);
+    font-size: 24px;
+    width: 288px;
+    height: 680px;
+}
+
+.contenido__texto{
+    font-family: var(--fuente-texto);
+    color: #000000;
+    margin: 30% 0 1% 0;
 }
 
 .contenido__botones{
-    align-items: flex-end;
+    display: flex;
+    gap: 24px;
+    align-content: space-between;
 }
 
 .boton__cifrar{
@@ -64,4 +81,11 @@ body{
     color: var(--color-primario);
     border: 2px var(--color-secundario);
     border-radius: 8px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    font-family: var(--fuente-texto);
+    color: #000000;
 }
