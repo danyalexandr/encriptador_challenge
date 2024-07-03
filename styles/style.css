@@ -33,7 +33,8 @@ body{
 .contenido__cifrar{
     padding: 5%;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column; 
+    justify-content: center;  
     height: 100%;
     width: auto;
     margin-left: 2%;
@@ -71,6 +72,7 @@ body{
 
 .contenido__no__encontrado{
     display: flex;
+    visibility: visible;
     flex-direction: column;
     justify-content: center;
     align-content: center;

@@ -12,31 +12,29 @@
         <img src="./assets/Frame 6.png" alt="logo de header">
     </header>
     <main class="contenido__main">
-    <section class="contenido__cifrar">
-            <textarea name="cifrar" id="textarea__cifrar">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Voluptatum beatae voluptatibus eaque iure recusandae expedita veritatis porro laboriosam, ea, 
-            dolorum obcaecati rem deserunt asperiores quasi? Et, quibusdam! Sint, cupiditate exercitationem!
-        </textarea>
+        <section class="contenido__cifrar">
+            <textarea name="cifrar" id="textarea__cifrar"></textarea>
         <p class="contenido__texto">solo texto en minusculas sin acentos</p>
         <div class="contenido__botones">
-            <button class="boton__cifrar">Encriptar</button>
-            <button class="boton__descifrar">Desencriptar</button>
+            <button class="boton__cifrar" onclick="encriptarTexto()">Encriptar</button>
+            <button class="boton__descifrar" onclick="desencriptarTexto()">Desencriptar</button>
         </div>    
     </section>
     <section class="contenido__descifrado">
-        <p class="contenido__texto__descifrado">resultado</p>
+        <p class="contenido__texto__descifrado" id="contenido__texto__descifrado"></p>
+        
         <div class="contenido__no__encontrado"><img class="contenido__imagen" src="./assets/Muñeco.png" alt="imagen en descifrar">
-        <p class="contenido__texto__no__encontrado">Ningun mensaje fue encontrado</p>
-        <p class="contenido__texto__a__ingresar">Ingresa el texto que deseas encriptar o desencriptar</p>
-    </div>
-    </section>
-    </main>
-    <footer class="footer">
-        <p>
-            Creado por lowPriority
-        </p>
-    </footer>
+            <p class="contenido__texto__no__encontrado" id="contenido__texto__no__encontrado"></p>
+            <p class="contenido__texto__a__ingresar" id="contenido__texto__a__ingresar"></p>
+        </div>
+</section>
+</main>
+<footer class="footer">
+    <p>
+        Creado por lowPriority
+    </p>
+</footer>
 </body>
+<script src="./scripts/scripts.js"></script>
 
 </html>
