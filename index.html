@@ -13,8 +13,8 @@
     </header>
     <main class="contenido__main">
         <section class="contenido__cifrar">
-            <textarea name="cifrar" id="textarea__cifrar"></textarea>
-        <p class="contenido__texto">solo texto en minusculas sin acentos</p>
+            <textarea name="cifrar" id="textarea__cifrar" onclick="limpiarTexto()"></textarea>
+        <p class="contenido__texto" id="contenido__texto"></p>
         <div class="contenido__botones">
             <button class="boton__cifrar" onclick="encriptarTexto()">Encriptar</button>
             <button class="boton__descifrar" onclick="desencriptarTexto()">Desencriptar</button>

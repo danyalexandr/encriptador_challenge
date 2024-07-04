@@ -30,8 +30,8 @@ function encriptarTexto() {
     }
 
     asignarTextoPorId('contenido__texto__descifrado', textoEncriptado);
-    asignarTextoPorId('textarea__cifrar', '');
-
+// Limpiar el textarea
+    limpiarTexto();
 }
 
 // Desencripta el texto
@@ -53,6 +53,12 @@ function asignarTextoPorId(id, texto){
     elementoHTML.innerHTML = texto.toString();
 }
 
+// Limpiar el texto del textarea al hacer clic
+function limpiarTexto() {
+    document.getElementById("textarea__cifrar").value = '';
+}
+
+asignarTextoPorId('contenido__texto', "solo texto en minusculas sin acentos")
 asignarTextoPorId('textarea__cifrar', "Ingrese el texto aqui");
 asignarTextoPorId('contenido__texto__descifrado', "");
 asignarTextoPorId('contenido__texto__no__encontrado', "Ningun mensaje fue encontrado");
