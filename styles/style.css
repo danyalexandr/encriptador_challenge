@@ -157,6 +157,12 @@ body{
         width: auto;
         border: none;
     }
+
+    .contenido__botones{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
     .contenido__imagen{
         visibility: hidden;
