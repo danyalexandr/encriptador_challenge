@@ -31,11 +31,20 @@ function encriptarTexto() {
 
     asignarTextoPorId('contenido__texto__descifrado', textoEncriptado);
     asignarTextoPorId('textarea__cifrar', '');
+
 }
 
-//desencripta
+// Desencripta el texto
 function desencriptarTexto(){
-alert(outputTexto);
+    let textoEncriptado = document.getElementById("contenido__texto__descifrado").innerHTML;
+    let textoDesencriptado = textoEncriptado
+        .replace(/enter/g, 'e')
+        .replace(/imes/g, 'i')
+        .replace(/ai/g, 'a')
+        .replace(/ober/g, 'o')
+        .replace(/ufat/g, 'u');
+    console.log("Texto desencriptado: " + textoDesencriptado);
+    asignarTextoPorId('contenido__texto__descifrado', textoDesencriptado);
 }
 
 //asigna texto a los elementos para evitar el hard code

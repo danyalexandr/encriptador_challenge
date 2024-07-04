@@ -41,7 +41,7 @@ body{
 }
 
 #textarea__cifrar{
-
+    outline: none;
     border: none;
     color: var(--color-primario);
     font-family: var(--fuente-texto);
