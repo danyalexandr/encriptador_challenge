@@ -156,6 +156,7 @@ body{
     .contenido__descifrado{
         width: auto;
         border: none;
+        margin-bottom: 7%;
     }
 
     .contenido__botones{
