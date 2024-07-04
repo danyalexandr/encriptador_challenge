@@ -157,4 +157,9 @@ body{
         width: auto;
         border: none;
     }
+    
+    .contenido__imagen{
+        visibility: hidden;
+        width: 0%;
+    }
 }
